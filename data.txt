@@ -1,0 +1,156 @@
+# данные для работы сервиса
+
+scaler.mean_
+[2013.42842 73952.24247 19.48108 1435.40479 88.14983]
+
+scaler.scale_
+[4.09527 60065.99321 3.87009 484.50481 31.55576]
+
+model.coef_
+[150402.73037 -29330.27968 41933.16188 47378.52736 284503.56973
+ 48902.67853 188546.62657 -1004.23705 -98510.88059 -117336.06978
+ -283405.94728 -40751.01700 -51781.86892 3307447.75974 -37331.00983
+ 598017.58381 -6287.45505 -95874.44947 6532.84706 49515.02942 33519.66154
+ 64985.62063 -141995.09575]
+ 
+model.intercept_
+852455.3938145775
+
+
+#  категории для обработки категориальных признаков
+ 
+fuel 
+fuel_Diesel, fuel_LPG, fuel_Petrol
+'Diesel' : 1, 0, 0
+'Petrol' : 0, 0, 1
+'LPG' : 0, 1, 0
+'CNG' : 0, 0, 0
+
+seller_type
+seller_type_Individual, seller_type_Trustmark Dealer
+'Individual' : 1, 0
+'Dealer' : 0, 0
+'Trustmark Dealer' : 0, 1
+
+transmission
+transmission_Manual
+'Manual' : 1
+'Automatic' : 0
+
+owner
+owner_Fourth & Above Owner, owner_Second Owner, owner_Test Drive Car, owner_Third Owner
+'First Owner' : 0, 0, 0, 0
+'Second Owner' : 0, 1, 0, 0
+'Third Owner' : 0, 0, 0, 1
+'Fourth & Above Owner' : 1, 0, 0, 0
+'Test Drive Car' : 0, 0, 1, 0
+
+seats
+seats_4, seats_5, seats_6, seats_7, seats_8, seats_9, seats_10, seats_14
+5 : 0, 1, 0, 0, 0, 0, 0, 0
+4 : 1, 0, 0, 0, 0, 0, 0, 0
+7 : 0, 0, 0, 1, 0, 0, 0, 0
+8 : 0, 0, 0, 0, 1, 0, 0, 0
+6 : 0, 0, 1, 0, 0, 0, 0, 0
+9 : 0, 0, 0, 0, 0, 1, 0, 0
+10 : 0, 0, 0, 0, 0, 0, 1, 0
+14 : 0, 0, 0, 0, 0, 0, 0, 1
+2 : 0, 0, 0, 0, 0, 0, 0, 0
+
+
+
+# данные для тестирования сервиса
+
+{
+  "name": "Maruti Swift Dzire ZDI",
+  "year": 2015,
+  "selling_price": 525000,
+  "km_driven": 40000,
+  "fuel": "Diesel",
+  "seller_type": "Individual",
+  "transmission": "Manual",
+  "owner": "First Owner",
+  "mileage": "26.59 kmpl",
+  "engine": "1248 CC",
+  "max_power": "74.0 bhp",
+  "torque": "160Nm@ 2000rpm",
+  "seats": 5.0
+}
+
+[
+	{
+	  "name": "Honda City i DTec E",
+	  "year": 2016,
+	  "selling_price": 765000,
+	  "km_driven": 80000,
+	  "fuel": "Diesel",
+	  "seller_type": "Individual",
+	  "transmission": "Manual",
+	  "owner": "First Owner",
+	  "mileage": "26.0 kmpl",
+	  "engine": "1498 CC",
+	  "max_power": "98.6 bhp",
+	  "torque": "200Nm@ 1750rpm",
+	  "seats": 5.0
+	},
+	{
+	  "name": "Hyundai Santro Sportz AMT BSIV",
+	  "year": 2019,
+	  "selling_price": 466000,
+	  "km_driven": 25000,
+	  "fuel": "Petrol",
+	  "seller_type": "Individual",
+	  "transmission": "Automatic",
+	  "owner": "Fourth & Above Owner",
+	  "mileage": "20.3 kmpl",
+	  "engine": "1086 CC",
+	  "max_power": "68 bhp",
+	  "torque": "99Nm@ 4500rpm",
+	  "seats": 5.0
+	},
+	{
+	  "name": "Ford Figo Aspire 1.2 Ti-VCT Titanium",
+	  "year": 2017,
+	  "selling_price": 565000,
+	  "km_driven": 80000,
+	  "fuel": "Petrol",
+	  "seller_type": "Individual",
+	  "transmission": "Manual",
+	  "owner": "First Owner",
+	  "mileage": "18.16 kmpl",
+	  "engine": "1196 CC",
+	  "max_power": "86.8 bhp",
+	  "torque": "112Nm@ 4000rpm",
+	  "seats": 5.0
+	},
+	{
+	  "name": "Tata Nano LX",
+	  "year": 2015,
+	  "selling_price": 130000,
+	  "km_driven": 60000,
+	  "fuel": "Petrol",
+	  "seller_type": "Individual",
+	  "transmission": "Manual",
+	  "owner": "First Owner",
+	  "mileage": "25.4 kmpl",
+	  "engine": "624 CC",
+	  "max_power": "37.48 bhp",
+	  "torque": "51Nm@ 4000+/-500rpm",
+	  "seats": 4.0
+	},
+	{
+	  "name": "Toyota Corolla Altis Diesel D4DJ",
+	  "year": 2012,
+	  "selling_price": 476999,
+	  "km_driven": 90000,
+	  "fuel": "Diesel",
+	  "seller_type": "Individual",
+	  "transmission": "Manual",
+	  "owner": "Fourth & Above Owner",
+	  "mileage": "21.43 kmpl",
+	  "engine": "1364 CC",
+	  "max_power": "87.2 bhp",
+	  "torque": "205Nm@ 1800-2800rpm",
+	  "seats": 4.0
+	}
+]
